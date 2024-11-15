@@ -163,7 +163,7 @@ function CarEditPage() {
               <Grid item xs={6} sm={4} key={index}>
                 <Box
                   component="img"
-                  src={`http://localhost:5000/${img}`}
+                  src={`https://car-system-backend-1.onrender.com/${img}`}
                   alt={`Car Image ${index + 1}`}
                   sx={{ width: '100%', height: 'auto', borderRadius: 1 }}
                 />

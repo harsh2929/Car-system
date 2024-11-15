@@ -36,7 +36,7 @@ const swaggerOptions = {
       },
       servers: [
         {
-          url: 'http://localhost:5000/api',
+          url: 'https://car-system-backend-1.onrender.com/api',
         },
       ],
       components: {

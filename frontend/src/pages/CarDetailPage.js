@@ -80,7 +80,7 @@ function CarDetailPage() {
                   <CardMedia
                     component="img"
                     height="140"
-                    image={`http://localhost:5000/${img}`}
+                    image={`https://car-system-backend-1.onrender.com/${img}`}
                     alt={`Car Image ${index + 1}`}
                   />
                 </Grid>

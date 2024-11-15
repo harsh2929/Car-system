@@ -129,7 +129,7 @@ function CarListPage() {
                   height="200"
                   image={
                     car.images[0]
-                      ? `http://localhost:5000/${car.images[0]}`
+                      ? `https://car-system-backend-1.onrender.com/${car.images[0]}`
                       : 'https://via.placeholder.com/200'
                   }
                   alt={car.title}

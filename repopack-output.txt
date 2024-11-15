@@ -152,7 +152,7 @@ const swaggerOptions = {
       },
       servers: [
         {
-          url: 'http://localhost:5000/api',
+          url: 'https://car-system-backend-1.onrender.com/api',
         },
       ],
       components: {
@@ -518,7 +518,7 @@ File: backend/swagger.json
 ================
 File: frontend/.env
 ================
-REACT_APP_API_BASE_URL=http://localhost:5000/api
+REACT_APP_API_BASE_URL=https://car-system-backend-1.onrender.com/api
 
 ================
 File: frontend/.gitignore
@@ -1510,7 +1510,7 @@ function CarDetailPage() {
                   <CardMedia
                     component="img"
                     height="140"
-                    image={`http://localhost:5000/${img}`}
+                    image={`https://car-system-backend-1.onrender.com/${img}`}
                     alt={`Car Image ${index + 1}`}
                   />
                 </Grid>
@@ -1738,7 +1738,7 @@ function CarEditPage() {
               <Grid item xs={6} sm={4} key={index}>
                 <Box
                   component="img"
-                  src={`http://localhost:5000/${img}`}
+                  src={`https://car-system-backend-1.onrender.com/${img}`}
                   alt={`Car Image ${index + 1}`}
                   sx={{ width: '100%', height: 'auto', borderRadius: 1 }}
                 />
@@ -1869,7 +1869,7 @@ function CarListPage() {
                   height="200"
                   image={
                     car.images[0]
-                      ? `http://localhost:5000/${car.images[0]}`
+                      ? `https://car-system-backend-1.onrender.com/${car.images[0]}`
                       : 'https://via.placeholder.com/200'
                   }
                   alt={car.title}
@@ -2637,7 +2637,7 @@ import axios from 'axios';
 
 // Create an instance of axios
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000/api',
+  baseURL: process.env.REACT_APP_API_BASE_URL || 'https://car-system-backend-1.onrender.com/api',
 });
 
 // Add a request interceptor to include the token

@@ -4,7 +4,7 @@ import axios from 'axios';
 
 // Create an instance of axios
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000/api',
+  baseURL: process.env.REACT_APP_API_BASE_URL || 'https://car-system-backend-1.onrender.com/api',
 });
 
 // Add a request interceptor to include the token
