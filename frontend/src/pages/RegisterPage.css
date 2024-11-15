@@ -1,0 +1,40 @@
+/* src/pages/RegisterPage.css */
+
+/* Prevent scrolling */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Disable scrolling */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Full-screen container */
+  .register-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Background Video */
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire background */
+    z-index: 0;
+    filter: brightness(60%); /* Dim the video slightly for better readability */
+  }
+  
+  /* Register Form Container */
+  .register-form-container {
+    position: relative;
+    z-index: 2; /* Ensure the form is above the video */
+    backdrop-filter: blur(8px); /* Adds a subtle blur for the glassmorphism effect */
+    border-radius: 16px;
+  }
+  
